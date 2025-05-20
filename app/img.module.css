@@ -1,0 +1,54 @@
+.imgWrap {
+  position: sticky;
+  height: 120px;
+  width: 90px;
+}
+
+.img {
+  height: 120px;
+  border-radius: 4px;
+  width: 90px;
+}
+
+.lazy {
+  background: #1f1f1f;
+  border-radius: 4px;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.barWrap {
+  margin: auto;
+  overflow: hidden;
+  position: sticky;
+}
+
+.barWrap,
+.bar {
+  border-radius: 5px;
+  height: 10px;
+  width: 40px;
+}
+
+.bar {
+  animation: movey 2s infinite;
+  background: #00aaff;
+  position: absolute;
+  transition: all .2s;
+}
+
+@keyframes movey {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: -50%;
+  }
+  100% {
+    left: 50%;
+  }
+}

@@ -1,0 +1,143 @@
+body {
+  background: black;
+  color: white;
+  display: grid;
+  font: 900 2rem Jua;   
+  height: 100vh;
+  margin: 0;
+}
+
+img {
+  object-fit: cover;
+}
+
+.box {
+  display: grid;
+  gap: 10px;
+  margin: auto;
+  place-items: center;
+}
+
+#appWrap {
+  margin: auto;
+
+  /* if width's more than 1240px (idk it just works ¯\_(ツ)_/¯) */
+  @media (1240px <= width) { 
+    width: 1190px; 
+  }
+}
+
+#app {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.boxes {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.box {
+  border-radius: 10px;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.box .name {
+  align-items: center;
+  color: black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 90px;
+}
+
+.box .items {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: auto;
+  width: 100%;
+}
+
+.items .album {
+  border-radius: 4px;
+  height: 120px;
+  width: 90px;
+}
+
+.search {
+  height: 100%;
+  width: 400px;
+}
+
+.search .bar {
+  background-color: #1f1f1f;
+  border: 0;
+  border-radius: 25px;
+  color: white;
+  height: 10px;
+  padding: 20px 40px;
+  outline: 0;
+  font: 900 1rem Jua;   
+}
+
+.search .items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0 0 0;
+}
+
+.search .album {
+  font: 900 1rem Jua;
+  height: auto;
+  width: 90px;
+}
+
+.album .name {
+  padding: 10px 0 0 0;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0 0 0;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button, .tag {
+  background-color: #00aaff;
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  outline: 0;
+  transition: .4s filter;
+}
+
+.button {
+  font: 900 1.2rem Jua;
+  padding: 10px 20px;
+}
+
+.tag {
+  font: 900 .9rem Jua;
+  padding: 5px 10px;
+}
+
+.button:hover,
+.tag:hover {
+  filter: brightness(200%);
+}

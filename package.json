@@ -1,0 +1,11 @@
+{
+  "name": "uwulist",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "13.4.7"
+  }
+}
