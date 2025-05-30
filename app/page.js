@@ -9,7 +9,7 @@ const all = [['S', '#fe769b'], ['A', '#ffffa6'], ['B', '#9df79d'], ['C', '#76f8f
 
 export default function Page() {
   const [albums, $albums] = useState([])
-  const [d, setD] = useState(all.slice(0, 4))
+  const [d, $d] = useState(all.slice(0, 4))
   const [boxItems, $boxItems] = useState([])
   const [image, $image] = useState()
   const [type, $type] = useState('ANIME')
@@ -20,11 +20,11 @@ export default function Page() {
   }
 
   const add = () => {
-    setD(all.slice(0, d.length + 1))
+    $d(all.slice(0, d.length + 1))
   }
 
   const rem = () => {
-    setD(d.slice(0, d.length - 1))
+    $d(d.slice(0, d.length - 1))
   }
 
   const onDrop = (i) => {
