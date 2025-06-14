@@ -1,6 +1,6 @@
-'use server'
+'use server';
 
-export default async function search (se, type) {
+export default async function search(se, type) {
   const query = `
   query {
     Page(perPage: 9) {
@@ -15,9 +15,9 @@ export default async function search (se, type) {
       }
     }
   }
-  `
+  `;
 
-  var url = 'https://graphql.anilist.co/'
+  var url = 'https://graphql.anilist.co/';
   var options = {
     method: 'POST',
     headers: {
@@ -27,9 +27,9 @@ export default async function search (se, type) {
     body: JSON.stringify({
       query: query,
     }),
-  }
+  };
 
-  var {data, errors} = await (await fetch(url, options)).json()
-  if (!data) return null
-  return data.Page.media
+  var { data, errors } = await (await fetch(url, options)).json();
+  if (!data) return null;
+  return data.Page.media;
 }

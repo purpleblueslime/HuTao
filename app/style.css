@@ -2,7 +2,7 @@ body {
   background: black;
   color: white;
   display: grid;
-  font: 900 2rem Jua;   
+  font: 900 2rem Jua;
   height: 100vh;
   margin: 0;
 }
@@ -22,8 +22,8 @@ img {
   margin: auto;
 
   /* if width's more than 1240px (idk it just works ¯\_(ツ)_/¯) */
-  @media (1240px <= width) { 
-    width: 1190px; 
+  @media (1240px <= width) {
+    width: 1190px;
   }
 }
 
@@ -76,6 +76,12 @@ img {
   width: 400px;
 }
 
+#bar {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
 .search .bar {
   background-color: #1f1f1f;
   border: 0;
@@ -84,7 +90,7 @@ img {
   height: 10px;
   padding: 20px 40px;
   outline: 0;
-  font: 900 1rem Jua;   
+  font: 900 1rem Jua;
 }
 
 .search .items {
@@ -117,14 +123,15 @@ img {
   justify-content: center;
 }
 
-.button, .tag {
+.button,
+.tag {
   background-color: #00aaff;
   border: 0;
   border-radius: 20px;
   color: white;
   cursor: pointer;
   outline: 0;
-  transition: .4s filter;
+  transition: 0.4s filter;
 }
 
 .button {
@@ -133,7 +140,7 @@ img {
 }
 
 .tag {
-  font: 900 .9rem Jua;
+  font: 900 0.9rem Jua;
   padding: 5px 10px;
 }
 
