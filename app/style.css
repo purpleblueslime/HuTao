@@ -31,12 +31,21 @@ img {
   display: flex;
   gap: 20px;
   padding: 20px;
+
+  @media (610px >= width) {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
 }
 
 .boxes {
   display: grid;
   gap: 10px;
   width: 100%;
+
+  @media (610px >= width) {
+    height: 100vh;
+  }
 }
 
 .box {
@@ -73,7 +82,12 @@ img {
 
 .search {
   height: 100%;
-  width: 400px;
+  width: 404px;
+
+  @media (610px >= width) {
+    height: auto;
+    width: 390px;
+  }
 }
 
 #bar {
@@ -87,10 +101,11 @@ img {
   border: 0;
   border-radius: 25px;
   color: white;
+  font: 900 1rem Jua;
   height: 10px;
   padding: 20px 40px;
   outline: 0;
-  font: 900 1rem Jua;
+  width: 100%;
 }
 
 .search .items {
@@ -98,6 +113,11 @@ img {
   flex-wrap: wrap;
   gap: 10px;
   padding: 20px 0 0 0;
+  width: 290px;
+
+  @media (610px >= width) {
+    width: 100%;
+  }
 }
 
 .search .album {
